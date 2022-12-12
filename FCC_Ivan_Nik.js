@@ -189,3 +189,56 @@ const lastName = "Lovelace";
 // Only change code below this line
 const secondToLastLetterOfLastName = lastName[lastName.length -2]; // Change this line
 
+// Task_36 ==> Word Blanks
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = "He saw a " + myAdjective + " " + myNoun + " " + "and " + myVerb + " " + myAdverb + "."; // Change this line
+// Only change code above this line
+
+// Task_37 ==> Store Multiple Values in one Variable using JavaScript Arrays
+// Only change code below this line
+const myArray = ["learning", 34];
+
+// Task_38 ==> Nest one Array within Another Array
+// Only change code below this line
+const myArray = [["running", 25], ["basketball", 17]];
+
+// Task_39 ==> Access Array Data with Indexes
+const myArray = [50, 60, 70];
+const myData = myArray[0];
+
+// Task_40 ==> Modify Array Data With Indexes
+// Setup
+const myArray = [18, 64, 99];
+
+// Only change code below this line
+myArray[0] = 45;
+
+// Task_41 ==> Access Multi-Dimensional Arrays With Indexes
+const myArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];
+
+// Task_42 ==> Manipulate Arrays With push()
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+myArray.push(["dog", 3]);
+
+// Task_43 ==> Manipulate Arrays With pop()
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.pop();
+
