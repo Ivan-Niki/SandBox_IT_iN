@@ -8,3 +8,69 @@
   }
 </style>
 <h2>CatPhotoApp</h2>
+
+/* Task_3 ==> Use a CSS Class to Style an Element */
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+/* Task_4 ==> Style Multiple Elements with a CSS Class */
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+/* Task_5 ==> Change the Font Size of an Element */
+<style>
+  .red-text {
+    color: red;
+  }
+  p {
+    font-size: 16px;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+<p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+/* Task_6 ==> Set the Font Family of an Element */
+<style>
+  .red-text {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+/* Task_7 ==>  */
+
+
+/* Task_8 ==>  */
+
+
+/* Task_9 ==>  */
+
+
+/* Task_10 ==>  */
+
+
+/* Task_11 ==>  */
