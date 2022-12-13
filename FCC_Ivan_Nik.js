@@ -242,3 +242,68 @@ const myArray = [["John", 23], ["cat", 2]];
 // Only change code below this line
 const removedFromMyArray = myArray.pop();
 
+// Task_44 ==> Manipulate Arrays With shift()
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.shift();
+
+// Task_45 ==> Manipulate Arrays With unshift()
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul", 35]);
+
+// Task_46 ==> Shopping List
+const myList = [
+    ["Milk", 2],
+    ["Apples", 5],
+    ["Oranges", 3],
+    ["Eggs", 10],
+    ["Potato", 7]
+];
+
+// Task_47 ==> Write Reusable JavaScript with Functions
+function reusableFunction() {
+    console.log("Hi World");
+}
+reusableFunction();
+
+// Task_48 ==> Passing Values to Functions with Arguments
+function functionWithArgs(param1, param2) {
+    console.log(param1 + param2);
+}
+  functionWithArgs(7,9);
+
+  // Task_49 ==> Return a Value from a Function with Return
+function timesFive(num) {
+    return num * 5;
+}
+const answer = timesFive(9);
+
+// Task_50 ==> Global Scope and Functions
+
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
