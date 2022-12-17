@@ -318,3 +318,45 @@ myLocalScope();
 // Run and check the console
 // myVar is not defined outside of myLocalScope
 console.log('outside myLocalScope', myVar);
+
+// Task_51 ==> Global vs. Local Scope in Functions
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+const outerWear = "sweater";
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+
+// Task_52 ==> Understanding Undefined Value returned from a Function
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive() {
+  sum = sum + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
+
+// Task_53 ==> Assignment with a Returned Value
+
+
+// Task_54 ==>
+
+
+// Task_55 ==>
+
+
+// Task_56 ==>
