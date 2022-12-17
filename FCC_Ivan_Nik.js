@@ -351,12 +351,37 @@ addThree();
 addFive();
 
 // Task_53 ==> Assignment with a Returned Value
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed = processArg(7);
+
+// Task_54 ==> 
 
 
-// Task_54 ==>
+// Task_55 ==> Understanding Boolean Values
+function welcomeToBooleans() {
+  // Only change code below this line
+
+  return true; // Change this line
+
+  // Only change code above this line
+}
 
 
-// Task_55 ==>
+// Task_56 ==> Use Conditional Logic with If Statements
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+if (wasThatTrue) {
+  return "Yes, that was true";
+}
+return "No, that was false"
 
+  // Only change code above this line
 
-// Task_56 ==>
+}
