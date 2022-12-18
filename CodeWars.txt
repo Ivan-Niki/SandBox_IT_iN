@@ -142,3 +142,26 @@ function capitalizeWord(word) {
   return newWord;
 }
 
+//Task_11 
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  if (fuelLeft*mpg >= distanceToPump) {
+    return(true);
+    } else {
+      return(false);
+    }
+};
+
+
+//Task_12
+function createArray(number){
+  var newArray = [];
+  
+  for (var counter = 1; counter <= number; counter++) {
+    newArray.push(counter);
+  }
+  
+  return newArray;
+}
+
+//Task_13 
+const solve = (x, y) => x / y;
