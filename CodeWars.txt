@@ -100,3 +100,45 @@ function popElement(arr){
   arr.pop()
   return arr
 }
+
+//Task_5
+function multiply(a, b){
+  return a * b;
+}
+
+//Task_6
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
+
+
+//Task_7
+function mystery() {
+  var results = {sanity: 'Hello'};
+  return results;
+}
+
+//Task_8
+function checkAlive (health) {
+  if (health <= 0) {
+    return false;
+  } 
+  else {
+    return true;
+  }
+}
+
+//Task_9
+// Write the "square"-function here
+function square (arg1) {
+  var result = Math.pow (arg1, 2);
+  return result;
+}
+
+
+//Task_10
+function capitalizeWord(word) {
+  var newWord = word[0].toUpperCase() + word.slice(1);
+  return newWord;
+}
+
