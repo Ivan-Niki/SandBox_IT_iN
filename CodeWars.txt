@@ -165,3 +165,35 @@ function createArray(number){
 
 //Task_13 
 const solve = (x, y) => x / y;
+
+//Task_14
+function evenOrOdd(number) {
+  let num = number;
+  if (num % 2 == 0) {
+    return ("Even");
+  }
+  else {
+    return ("Odd");
+  }
+}
+
+//Task_15
+function rainAmount(mm) {
+    if (mm < 40) {
+         return (`You need to give your plant ${40 - mm}mm of water`);
+    }
+    else {
+         return ("Your plant has had more than enough water for today!");
+    };
+}
+
+//Task_16
+function solution(str){
+  return str.split("").reverse().join("");
+}
+
+//Task_17
+function opposite(number) {
+  return (number * (-1));
+}
+
