@@ -500,3 +500,31 @@ function testLessOrEqual(val) {
 }
 
 testLessOrEqual(10);
+
+// Task_66 ==> Comparisons with the Logical And Operator
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <= 50 && val >= 25) {
+      return "Yes";
+    }
+
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
+
+// Task_67 ==> Comparisons with the Logical Or Operator
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);

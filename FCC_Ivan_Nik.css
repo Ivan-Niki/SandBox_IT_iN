@@ -231,3 +231,31 @@
   <h5 class="box blue-box">padding</h5>
 </div>
 
+/* Task_18 ==> Add a Negative Margin to an Element */
+.blue-box {
+  background-color: blue;
+  color: #fff;
+  padding: 20px;
+  margin: -15px;
+}
+
+/* Task_19 ==> Add Different Padding to Each Side of an Element */
+.blue-box {
+  background-color: blue;
+  color: #fff;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+/* Task_20 ==>  */ 
+
+
+/* Task_21 ==>  */ 
+
+
+/* Task_22 ==>  */ 
+
+
+/* Task_23 ==>  */ 
