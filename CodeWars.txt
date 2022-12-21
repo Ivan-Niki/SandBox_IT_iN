@@ -197,3 +197,70 @@ function opposite(number) {
   return (number * (-1));
 }
 
+//Task_18
+function makeNegative(num) {
+  if (num >= 0) {
+    return (num * (-1));
+  }
+  else {
+    return (num);
+  }
+}
+
+
+//Task_19
+function greet(name){
+  return (`Hello, ${name} how are you doing today?`);
+}
+
+//Task_20
+function removeChar(str){
+ if (str.length >= 2){
+   return(str.slice(1, -1));
+ }
+  else {
+    return(str);
+  }
+}
+
+//Task_21
+function noSpace(x){
+return (x.replace(/\s/g,''));
+}
+
+//Task_22
+function countSheeps(arrayOfSheep) {
+  let sum = 0;
+  for (let i=0; i < arrayOfSheep.length; i++) {
+     if (arrayOfSheep[i] == true) {
+    sum+= 1;
+  }
+}
+  return (sum);
+}
+
+//Task_23
+function litres(time) {
+  return (Math.floor(time * 0.5));
+}
+
+//Task_24
+function basicOp(operation, value1, value2)
+{ if (operation == `+`) {
+      return(value1 + value2);
+      }
+ else if (operation == `-`) {
+      return(value1 - value2);
+   }
+  else if (operation == `*`) {
+      return(value1 * value2);
+    }
+   else if (operation == `/`) {
+      return(value1 / value2);
+}
+    }
+
+//Task_25
+function century(year) {
+  return (Math.ceil(year / 100));
+}
