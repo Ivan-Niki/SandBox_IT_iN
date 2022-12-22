@@ -264,3 +264,154 @@ function basicOp(operation, value1, value2)
 function century(year) {
   return (Math.ceil(year / 100));
 }
+
+//Task_25
+function doubleInteger(i) {
+  i=i*2;
+  return (i);
+}
+
+//Task_26
+function maps(x){
+ let result = x.map(function(elem){
+  return (elem * 2);
+});
+  return(result);
+}
+
+//Task_27
+function evalObject(value){
+  var result = 0;
+  switch(value.operation){
+    case'+': result = value.a + value.b;
+      break;
+    case'-': result = value.a - value.b;
+       break;
+    case'/': result = value.a / value.b;
+       break;
+    case'*': result = value.a * value.b;
+       break;
+    case'%': result = value.a % value.b;
+       break;
+    case'^': result = Math.pow(value.a, value.b);
+       break;
+  }
+  return result;
+}
+
+//Task_28
+const quarterOf = (month) => {
+  return Math.ceil(month / 3);
+}
+
+
+//Task_29
+function greet(name){
+   if(name === "Johnny") {
+    return "Hello, my love!";
+    }
+  return "Hello, " + name + "!";
+}
+
+
+//Task_30
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
+
+//Task_31
+function lovefunc(flower1, flower2){
+  if ((flower1 + flower2) % 2 > 0) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
+}
+
+//Task_32
+function shortcut (string) {
+  return string.replace(/[aeiou]/g, '');
+}
+
+
+//Task_33 (This kata is about multiplying a given number by eight if it is an even number and by nine otherwise).
+function simpleMultiplication(number) {
+    if(number % 2 == 0) {
+      return (number * 8);
+      }
+      else {
+        return (number * 9);
+      }
+}
+
+//Task_33 (2nd version)
+function simpleMultiplication(n) {
+    return n * (n % 2 ? 9 : 8);
+}
+
+
+//Task_34 
+//Clock shows h hours, m minutes and s seconds after midnight.
+Your task is to write a function which returns the time since midnight in milliseconds.
+
+function past(h, m, s){
+  return (h * 3600000 + m * 60000 + s * 1000);
+}
+
+//Task_35
+Create a function that checks if a number n is divisible by two numbers x AND y. 
+All inputs are positive, non-zero numbers. 
+
+function isDivisible(n, x, y) {
+  if (n % x == 0 && n % y == 0) {
+    return (true);
+  }
+  return (false);
+}
+
+//Task_35 (2nd version)
+
+function isDivisible(n, x, y) {
+  return (n % x === 0 && n % y === 0) ? true : false;
+}
+
+//Task_36
+Given a set of numbers, return the additive inverse of each. 
+Each positive becomes negatives, and the negatives become positives.
+function invert(array) {
+   let invArray = array.map(function (element){
+     element *= -1;
+     return (element);
+   })
+     return (invArray);
+}
+
+//Task_36 (2nd version)
+function invert(array) {
+  for(let i=0; i<array.length; i++){
+    array[i] *= -1;
+  }
+   return array;
+}
+
+//Task_36 (3nd version)
+function invert(array) {
+   return array.map(e=> e*-1);
+}
+
+OR
+
+function invert(array) {
+   return array.map(el => -el);
+}
+
+//Task_37
+
+
+
+
+
+
+
+
