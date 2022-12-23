@@ -249,13 +249,28 @@
   padding-left: 40px;
 }
 
-/* Task_20 ==>  */ 
+/* Task_20 ==> Add Different Margins to Each Side of an Element */ 
+.blue-box {
+  background-color: blue;
+  color: #fff;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
 
+/* Task_21 ==> Use Clockwise Notation to Specify the Margin of an Element */ 
+blue-box {
+  background-color: blue;
+  color: #fff;
+  padding: 40px 20px 20px 40px;
+}
 
-/* Task_21 ==>  */ 
-
-
-/* Task_22 ==>  */ 
-
+/* Task_22 ==> Use Clockwise Notation to Specify the Margin of an Element */ 
+.blue-box {
+  background-color: blue;
+  color: #fff;
+  margin: 40px 20px 20px 40px;
+}
 
 /* Task_23 ==>  */ 
