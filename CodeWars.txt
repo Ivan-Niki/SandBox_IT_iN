@@ -408,7 +408,21 @@ function invert(array) {
 
 //Task_37
 
+function DNAtoRNA(dna) {
+  let rna = dna.replace (/T/ig, 'U');
+  return (rna);
+}
 
+//Task_38
+var min = function(list){
+    result = Math.min(...list);
+    return result;
+}
+
+var max = function(list){
+    result = Math.max(...list);
+    return result;
+}
 
 
 
