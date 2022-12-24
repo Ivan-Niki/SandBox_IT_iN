@@ -273,4 +273,8 @@ blue-box {
   margin: 40px 20px 20px 40px;
 }
 
-/* Task_23 ==>  */ 
+/* Task_23 ==> Use Attribute Selectors to Style Elements */ 
+[type="checkbox"] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
