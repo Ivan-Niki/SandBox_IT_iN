@@ -439,8 +439,114 @@ function findAverage(array) {
   return sum/array.length;
 }
 
+//Task_39
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, '');
+}
+
+//Task_40 
+// Given a non-empty array of integers, return the result of multiplying the values together in order.
+function grow(x){
+let result = 1;
+  for (let i = 0; i < x.length; i++) {
+result = result * x[i];    
+  }
+  return result;
+}
 
 
+//Task_40 (2nd version)
+const grow=x=> x.reduce((a,b) => a*b);
+
+//Task_41
+// Let's play! You have to return which player won! In case of a draw return Draw!.
+// Examples(Input1, Input2 --> Output):
+
+/* "scissors", "paper" --> "Player 1 won!"
+"scissors", "rock" --> "Player 2 won!"
+"paper", "paper" --> "Draw!" */
+
+const rps = (p1, p2) => {
+if (p1 == "scissors" && p2 == "paper") {
+  return "Player 1 won!";
+  } else if (p1 == "scissors" && p2 == "rock") {
+    return "Player 2 won!";
+    } else if (p1 == "paper" && p2 == "scissors") {
+      return "Player 2 won!";
+      } else if (p1 == "paper" && p2 == "rock") {
+        return "Player 1 won!";
+        } else if (p1 == "rock" && p2 == "scissors") {
+          return "Player 1 won!";
+          } else if (p1 == "rock" && p2 == "paper") {
+            return "Player 2 won!";
+            } else {
+                return "Draw!"
+          }
+};
+
+//Task_41 (2nd version)
+const rps = (p1, p2) => {
+  if (p1 == p2)
+    return 'Draw!';
+    
+   if (p1 == 'rock' && p2 == 'scissors') 
+     return 'Player 1 won!'
+   else if (p1 == 'scissors' && p2 == 'paper') 
+     return 'Player 1 won!'
+   else if (p1 == 'paper' && p2 == 'rock') 
+     return 'Player 1 won!'
+   else
+     return 'Player 2 won!';
+};
+
+//Task_42
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return (length * width * height);
+  }
+}
+
+//Task_43
+/* You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+If it is a square, return its area. If it is a rectangle, return its perimeter. */
+
+const areaOrPerimeter = function(l , w) {
+  if (l == w) {
+    return l * w;
+  }
+    return (l * 2 + w * 2);
+};
+
+
+//Task_44
+// Write function bmi that calculates body mass index (bmi = weight / height2).
+//if bmi <= 18.5 return "Underweight"
+//if bmi <= 25.0 return "Normal"
+//if bmi <= 30.0 return "Overweight"
+//if bmi > 30 return "Obese"
+
+function bmi(weight, height) {
+ let result = weight / Math.pow(height, 2);
+  if (result <= 18.5) {
+    return "Underweight";
+  } else if (result <= 25.0) {
+    return "Normal";
+  } else if (result <= 30.0) {
+    return "Overweight";
+  } else {
+    return "Obese";
+  }
+}
+
+//Task_45
+//You are given two interior angles (in degrees) of a triangle.
+//Write a function to return the 3rd.
+//Note: only positive integers will be tested.
+
+function otherAngle(a, b) {
+  return (180 - (a +b));
+}
 
 
 

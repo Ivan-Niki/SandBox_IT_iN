@@ -278,3 +278,61 @@ blue-box {
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
+/* Task_24 ==> Style the HTML Body Element */
+<style>
+  body {
+    background-color: black;
+  }
+</style>
+
+/* Task_25 ==> Inherit Styles from the Body Element */
+<style>
+  body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+  }
+</style>
+
+<h1>Hello World</h1>
+
+/* Task_26 ==> Prioritize One Style Over Another */
+<style>
+  .pink-text {
+    color: pink;
+  }
+  
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
+
+/* Task_27 ==> Override Styles in Subsequent CSS */
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
+
+
+/* Task_28 ==>  */
+
+
+
+/* Task_29 ==>  */
+
+
+/* Task_30 ==>  */
