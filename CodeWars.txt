@@ -558,6 +558,12 @@ function smash (words) {
    return (words.join(' '));
 };
 
+//Task_47
+//Complete the function to return his total number of goals in all three league
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+
 
 
 
