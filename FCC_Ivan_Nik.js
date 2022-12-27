@@ -938,3 +938,50 @@ const myStorage = {
 };
 
 const gloveBoxContents = myStorage.car.inside["glove box"];
+
+// Task_91 ==> Accessing Nested Arrays
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];
+
+// Task_92 ==> Local Scope and Functions
+function myLocalScope() {
+  // Only change code below this line
+let myVar = "Hello!";
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+
+// Task_93 ==> Iterate with JavaScript While Loops
+// Setup
+const myArray = [];
+let i = 5;
+while (i <= 5 && i >= 0) {
+myArray.push(i);
+i--;
+}
+
+// Only change code below this line
+
+// Task_94 ==> 
