@@ -577,6 +577,52 @@ let result = (employed == true && vacation == false) ? true : false;
   return result;
 }
 
+//Task_49
+//Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
+function getGrade (s1, s2, s3) {
+  let avrg = (s1 + s2 + s3) / 3;
+  if (avrg >= 90 && avrg <= 100) {
+    return 'A';
+    } else if (avrg >= 80 && avrg < 90) {
+    return 'B';
+    } else if (avrg >= 70 && avrg < 80) {
+    return 'C';
+    } else if (avrg >= 60 && avrg < 70) {
+    return 'D';
+    } else {
+    return 'F';
+    }
+  }
+  
+//Task_49 (2nd version)
+  function getGrade (s1, s2, s3) {
+  var s = (s1 + s2 + s3) / 3
+  return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F"
+}
 
 
+//Task_50
+//In this kata you will create a function that takes a list of non-negative integers and strings 
+//and returns a new list with the strings filtered out.
+
+function filter_list(l) {
+  let newarr = l.filter(function(item) {
+    if (typeof item === 'number') {
+      return true;
+}
+    })
+    return newarr;
+ }
+ 
+//Task_50 (2nd version)
+
+function filter_list(l) {
+  return l.filter(function(v) {return typeof v == 'number'})
+}
+ 
+//Task_50 (3rd version)
+
+function filter_list(l) {
+ return l.filter(v => typeof v == "number")
+}
 
