@@ -984,4 +984,31 @@ i--;
 
 // Only change code below this line
 
-// Task_94 ==> 
+// Task_94 ==> Iterate with JavaScript For Loops
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 6; i++) {
+  myArray.push(i);
+}
+
+// Task_95 ==> Iterate Odd Numbers With a For Loop
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 10; i+=2) {
+  myArray.push(i);
+}
+
+// Task_96 ==> Count Backwards With a For Loop
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 9; i > 0; i-=2) {
+  myArray.push(i);
+}
+
