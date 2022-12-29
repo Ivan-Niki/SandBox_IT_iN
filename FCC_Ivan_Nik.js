@@ -1036,3 +1036,11 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+
+// Task_98 ==> Use the parseInt Function
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");
