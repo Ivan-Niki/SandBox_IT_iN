@@ -471,3 +471,35 @@ blue-box {
   }
 </style>
 <h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
+
+
+/* Task_36 ==> Import a Google Font */
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+  h2 {
+    font-family: Lobster;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+/* Task_37 ==> Specify How Fonts Should Degrade */
+<!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">-->
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+  }
+  

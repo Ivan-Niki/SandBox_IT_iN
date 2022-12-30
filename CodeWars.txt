@@ -645,3 +645,29 @@ Example: (Input1, Input2 -->Output)
 function sumStr(a,b) {
   return String(Number(a) + Number(b));
 }
+
+
+//Task_53
+//Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+//Example(Input => Output):
+//35231 => [1,3,2,5,3]
+//0 => [0]
+
+1st version
+function digitize(n) {
+  let str1 = String(n);
+  let res1 = str1.split('').reverse();
+  return res1.map(item => Number(item));
+}
+
+2nd version
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
+
+
+
+
+
+
+
