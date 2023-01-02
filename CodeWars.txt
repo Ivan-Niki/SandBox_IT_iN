@@ -665,9 +665,126 @@ function digitize(n) {
   return String(n).split('').map(Number).reverse()
 }
 
+//Task_54
+//Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+//Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+
+function paperwork(n, m) {
+  if (n < 0 || m < 0) {
+    return 0;
+  } else {
+    return n * m;
+  }
+}
+
+//Task_55
+//need a function that can transform a number (integer) into a string.
+//What ways of achieving this do you know?
+
+function numberToString(num) {
+  return String(num);
+}
+
+//Task_56
+//Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+function boolToWord( bool ){
+  if (bool === true) {
+    return "Yes";//...
+  }
+  return "No";
+}
+
+//Task_56 2nd version
+function boolToWord( bool ){
+  return bool === true ? "Yes" : "No";
+}
+
+//Task_57
+//We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+const stringToNumber = function(str){
+  return Number(str);
+}
 
 
+//Task_57 (2nd version)
+
+var stringToNumber = function(str){
+  return parseInt(str);
+}
+
+//Task_57 (3rd version)
+
+var stringToNumber = function(str){
+  return +str;
+}
 
 
+//Task_58
+//You get an array of numbers, return the sum of all of the positives ones.
+//Example [1,-4,7,12] => 1 + 7 + 12 = 20
+//Note: if there is nothing to sum, the sum is default to 0.
+
+function positiveSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i ++) {
+    if (arr[i] > 0) {
+      sum = sum + arr[i];
+    }
+  }
+  return sum;
+}
+
+//Task_59
+//Given an array of integers your solution should find the smallest integer.
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let currentMin = args[0];
+    for (let i = 1; i < args.length; i++) {
+      if (args[i] < currentMin) {
+        currentMin = args[i];
+      }
+    }
+    return currentMin;
+  }
+}
+
+//Task_59 (2nd version)
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
+
+//Task_60
+//Make a simple function called greet that returns the most-famous "hello world!".
+
+function greet () {
+  return "hello world!"
+}
+
+//Task_61
+//Implement a function which convert the given boolean value into its string representation.
+//Note: Only valid inputs will be given.
+
+function booleanToString(b){
+  if (b === true) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+
+//Task_61 (2nd version)
+function booleanToString(b){
+  return b.toString();
+}
+
+//Task_61 (3rd version)
+function booleanToString(b){
+  return String(b);
+}
 
 

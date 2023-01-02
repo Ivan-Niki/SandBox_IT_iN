@@ -1051,3 +1051,24 @@ function convertToInteger(str) {
 }
 
 convertToInteger("10011");
+
+// Task_100 ==> Stand in Line
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  let result = arr.shift();
+  return result;
+  // Only change code above this line
+}
+
+// Task_101 ==> Iterate with JavaScript Do...While Loops
+// Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+ do {
+  myArray.push(i);
+  i++;
+} while (i < 5);
+

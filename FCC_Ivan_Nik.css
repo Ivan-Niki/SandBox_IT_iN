@@ -503,3 +503,15 @@ blue-box {
     font-family: Lobster, monospace;
   }
   
+
+/* Task_37 ==> Use CSS Variables to change several elements at once */
+  <style>
+  .penguin {
+
+    /* Only change code below this line */
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+    /* Only change code above this line */
+
+    
