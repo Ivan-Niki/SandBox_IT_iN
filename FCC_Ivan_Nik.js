@@ -1072,3 +1072,11 @@ let i = 10;
   i++;
 } while (i < 5);
 
+// Task_102 ==> Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
+  }
+  
+  checkEqual(1, 2);
+
+  

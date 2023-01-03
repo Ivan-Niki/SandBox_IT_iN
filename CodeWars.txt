@@ -787,4 +787,130 @@ function booleanToString(b){
   return String(b);
 }
 
+//Task_62
+//Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+//The output should be two capital letters with a dot separating them.
+//It should look like this:
+//===> Sam Harris => S.H
+//===> patrick feeney => P.F
 
+
+function abbrevName(name){
+  let arr = name.split(' ');
+  return arr[0].charAt(0).toUpperCase() + "." + arr[1].charAt(0).toUpperCase();
+}
+
+
+//Task_62 (2nd version)
+function abbrevName(name){
+
+    return name[0].toUpperCase() + "." + name[name.indexOf(" ")+1].toUpperCase();
+}
+
+//Task_63
+//Create a function which answers the question "Are you playing banjo?".
+//If your name starts with the letter "R" or lower case "r", you are playing banjo!
+//The function takes a name as its only argument, and returns one of the following strings:
+//name + " plays banjo" 
+//name + " does not play banjo"
+
+function areYouPlayingBanjo(name) {
+  if (name[0] == "R" || name[0] == "r") {
+    return name + " plays banjo";
+  } else {
+    return name + " does not play banjo";
+  }
+}
+
+//Task_63 (2nd version)
+function areYouPlayingBanjo(name) {
+  if (name[0].toLowerCase() === 'r') {
+    return name + ' plays banjo';
+  } else {
+    return name + ' does not play banjo';
+  }
+}
+
+//Task_64
+//You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+//Array can contain numbers or strings. X can be either.
+//Return true if the array contains the value, false if not.
+
+function areYouPlayingBanjo(name) {
+function check(a,x){
+  return a.includes(x);
+};
+
+
+//Task_65
+//A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! 
+//each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. 
+//Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+//Return True if yes, False otherwise :)
+
+function hero(bullets, dragons){
+if (bullets >= dragons * 2) {
+  return true;
+}
+  return false;
+}
+
+//Task_65 (2nd version)
+function hero(bullets, dragons){
+  return bullets/dragons >= 2
+}
+
+//Task_66
+//You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+//As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+//For example(Input --> Output):
+
+10 --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ 1 --> [1]
+ 
+function monkeyCount(n) {
+let arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+
+//Task_67
+//Write a function to split a string and convert it into an array of words.
+//Examples (Input ==> Output):
+//"Robin Singh" ==> ["Robin", "Singh"]
+
+function stringToArray(string){
+  return string.split(' ');
+}
+
+//Task_68
+//Build a function that returns an array of integers from n to 1 where n>0.
+//Example : n=5 --> [5,4,3,2,1]
+
+const reverseSeq = n => {
+  let arr = [];
+  for (let i = n; i > 0; i--) {
+    arr.push(i);
+  }
+  return arr;
+};
+
+//Task_69
+//Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+//Use conditionals to return the proper message:
+//name equals owner ====>	 'Hello boss'
+//otherwise =====>	'Hello guest'
+
+function greet (name, owner) {
+  if (name == owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+}
+
+
+//Task_70
