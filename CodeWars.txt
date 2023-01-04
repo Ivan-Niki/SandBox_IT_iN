@@ -914,3 +914,54 @@ function greet (name, owner) {
 
 
 //Task_70
+//Can you find the needle in the haystack?
+//Write a function findNeedle() that takes an array full of junk but containing one "needle"
+//After your function finds the needle it should return a message (as a string) that says:
+//"found the needle at position " plus the index it found the needle, so:
+//Example(Input --> Output)
+//["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
+
+function findNeedle(haystack) {
+  let res = haystack.indexOf("needle");
+  return `found the needle at position ${res}`;
+}
+
+
+//Task_71
+//Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. 
+//If the array does not contain any numbers then you should return 0.
+
+function sum (numbers) {
+    "use strict";
+    let result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+   return result; 
+};
+
+
+//Task_72
+Complete the solution so that it reverses all of the words within the string passed in.
+Example(Input --> Output):
+"The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
+
+function reverseWords(str){
+  let arr = str.split(" ");
+  let reverseArr = arr.reverse();
+  let resultStr = reverseArr.join(" ");
+  return resultStr;
+}
+
+//Task_72 (2nd version)
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ');
+}
+
+//Task_72
+//The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+//For example:  1.08 --> 30
+
+function cockroachSpeed(s) {
+  return Math.floor(s * 100000 / 3600);
+}
