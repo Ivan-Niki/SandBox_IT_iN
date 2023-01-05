@@ -1088,5 +1088,42 @@ function checkEqual(a, b) {
   
   checkSign(10);
 
- // Task_104 ==> 
+ // Task_104 ==> Generate Random Fractions with JavaScript
 
+ function randomFraction() {
+
+  // Only change code below this line
+
+  return Math.random();
+
+  // Only change code above this line
+}
+
+// Task_105 ==> Generate Random Whole Numbers with JavaScript
+
+function randomWholeNum() {
+
+  // Only change code below this line
+
+  return Math.floor(Math.random() * 10);
+}
+
+// Task_106 ==> Generate Random Whole Numbers within a Range
+
+function randomRange(myMin, myMax) {
+  // Only change code below this line
+  return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+  // Only change code above this line
+}
+
+
+
+
+
+
+
+// REGULAR EXPRESSIONS
+// Task_200 ==> Using the Test Method
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString); // Change this line

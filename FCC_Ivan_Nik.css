@@ -535,4 +535,19 @@ blue-box {
       height: 300px;
     }
 
+    /* Task_40 ==> Use a custom CSS Variable */
+    .penguin-top {
+      background: var(--penguin-skin);
+      top: 10%;
+      left: 25%;
+
+    /* Task_41 ==> Attach a Fallback value to a CSS Variable */
+       /* Change code below this line */
+    background: var(--pengiun-skin, black);
+    /* Change code above this line */
+
+    /* Change code below this line */
+    background: var(--pengiun-skin, black);
+    /* Change code above this line */
+
     
