@@ -1145,3 +1145,50 @@ function doubleChar(str) {
   return [...str].map(x => x.concat(x)).join("");
 }
 
+//Task_83
+//Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+//If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+//Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS, Go, Java, Scala, and Julia), 
+//"$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell, and Lua) or "¥" (Rust).
+
+function bonusTime(salary, bonus) {
+  if (bonus == true) {
+    return ("\u00A3" + String(salary * 10));
+  }
+  else {
+    return ("\u00A3" + String(salary));
+  }
+}
+
+//Task_83 (2nd version)
+function bonusTime(salary, bonus) 
+{
+  if(bonus)
+  {
+    return "£" + (salary*10).toString();
+  }
+  return "£" + salary.toString();
+}
+
+//Task_83 (3rd version)
+function bonusTime(salary, bonus) {
+  var money = bonus ? salary*10 : salary;
+  return '£' + money;
+}
+
+//Task_84
+//Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him
+//Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message :)
+//If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+//If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+
+function hoopCount (n) {
+   if (n >= 10) {
+     return "Great, now move on to tricks";
+   }
+  else {
+    return "Keep at it until you get it";
+  }
+}
+
+//Task_85

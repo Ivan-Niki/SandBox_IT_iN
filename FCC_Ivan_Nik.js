@@ -1127,3 +1127,8 @@ function randomRange(myMin, myMax) {
 let myString = "Hello, World!";
 let myRegex = /Hello/;
 let result = myRegex.test(myString); // Change this line
+
+BASIC DATA STRUCTURES
+// Task_1 ==> Use an Array to Store a Collection of Data
+
+let yourArray = ['Ivan', 34, true, 'JavaScript', 1200]; // Change this line
