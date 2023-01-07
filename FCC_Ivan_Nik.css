@@ -564,5 +564,49 @@ blue-box {
     
       </style><div class="red-box"></div>
 
-      
+    /* Task_43 ==> Inherit CSS Variables */
+      <style>
+      :root {
+        /* Only change code below this line */
+    --penguin-belly: pink;
+        /* Only change code above this line */
+      }
+    
+      body {
+        background: var(--penguin-belly, #c6faf1);
+      }
+
+    /* Task_44 ==> Change a variable for a specific area */
+
+    .penguin {
+        /* Only change code below this line */
+        --penguin-belly: white;
+        /* Only change code above this line */
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        width: 300px;
+        height: 300px;
+      }
+
+
+    /* Task_45 ==>  Use a media query to change a variable */
+
+  <style>
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+
+  @media (max-width: 350px) {
+    :root {
+      /* Only change code below this line */
+    --penguin-size: 200px;
+    --penguin-skin: black;
+      /* Only change code above this line */
+    }
+  }
 

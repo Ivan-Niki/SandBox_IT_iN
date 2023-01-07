@@ -1212,3 +1212,77 @@ function testEven(n) {
   return n % 2 === 0 ? true : false;
 }
 
+//Task_86
+//The function is not returning the correct values. Can you figure out why?
+//Example (Input --> Output ):
+//3 --> "Earth"
+
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury';
+      break;
+    case 2:
+      name = 'Venus';
+      break;
+    case 3:
+      name = 'Earth';
+      break;
+    case 4:
+      name = 'Mars';
+      break;
+    case 5:
+      name = 'Jupiter';
+      break;
+    case 6:
+      name = 'Saturn';
+      break;
+    case 7:
+      name = 'Uranus';
+      break;
+    case 8:
+      name = 'Neptune';
+      break;
+  }
+  return name;
+}
+
+//Task_87
+//The function pickIt accepts 1 parameter, arr, which is an array of numbers. We need to traverse arr by using a for loop. 
+//If an element is an odd number, push it to the odd array, and if it's an even number, push it to the evenarray.
+//I've defined two arrays odd and even in the function, and also wrote the return statement. Your work is to write a for loop.
+
+function pickIt(arr){
+  var odd=[],even=[];
+  //coding here
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      odd.push(arr[i]);
+    }
+    else {
+      even.push(arr[i]);
+    }
+  }
+  return [odd,even];
+}
+
+//Task_88
+//Give you a function animal, accept 1 parameter:obj like this:
+//{name:"dog",legs:4,color:"white"}
+//and return a string like this: "This white dog has 4 legs."
+
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+}
+
+
+//Task_89
+//Coding in function trueOrFalse, function accept 1 parameters:val, try to use the conditional statement if...else, 
+//if val value is false (val==false or it can convert to false), should return a string "false", if not, return a string "true".
+
+function trueOrFalse(val){
+  if (val) return "true";             
+  else return "false";
+}
+
