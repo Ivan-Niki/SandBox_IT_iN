@@ -1133,12 +1133,10 @@ let result = myRegex.test(myString); // Change this line
 
 BASIC DATA STRUCTURES
 // Task_1 ==> Use an Array to Store a Collection of Data
-
 let yourArray = ['Ivan', 34, true, 'JavaScript', 1200]; // Change this line
 
 
 // Task_2 ==> Access an Array's Contents Using Bracket Notation
-
 let myArray = ["a", "b", "c", "d"];
 // Only change code below this line
 myArray[1] = "changed 1st position";
