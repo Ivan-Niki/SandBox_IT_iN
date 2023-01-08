@@ -1286,3 +1286,133 @@ function trueOrFalse(val){
   else return "false";
 }
 
+//Task_90
+//Complete function padIt, which accepts 2 parameters:
+//str: a string representing the string to pad. We will pad it with "*" symbols on its left side and on its right side.
+//n: a number indicating how many times to pad the string.
+//Behaviour
+//You need to write a loop statement within the function that loops n times. 
+//Each time through the loop it will add one * to str, alternating on which side it is padded: 
+//the first time will add a * to the left side of str, the second time will add a * to the right side, and so on.
+
+//Finally, return the padded string.
+
+function padIt(str,n){
+  while (n > 0) {
+    if (n % 2 == 0) {
+      str = str + "*";
+    }
+    else {
+      str = "*" + str;
+    }
+    n--;
+  }
+  return str;
+}
+
+//Task_90 (2nd version)
+function padIt(str,n){
+  let counter = 1;
+  while(counter <= n){
+    if(counter % 2 != 0) str = '*' + str;
+    if(counter % 2 == 0) str += '*'
+    counter++
+  }
+  return str
+}
+
+//Task_90 (3rd version)
+function padIt(str,n){
+  let i = 1
+  while(i <= n){
+    i % 2 !== 0 ? str = "*" + str : str += "*"; 
+    i++;
+  }
+  return str;
+}
+
+//Task_91
+//Complete the function howManydays. It accepts 1 parameter month, which means the month of the year. 
+//Different months have a different number of days as shown in the table below. Return the number of days that are in month. 
+//There is no need for input validation: month will always be greater than 0 and less than or equal to 12.
+
+function howManydays(month){
+  var days;
+  switch (month){
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+      days = 31;
+      break;
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+      days = 30;
+      break;
+      case 2:
+      days = 28;
+      break;
+  }
+  return days;
+}
+
+
+//Task_91 (2nd version)
+
+function howManydays(month){
+  var days;
+  switch (month){
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+      days = 30;
+      break;
+      case 2:
+      days = 28;
+      break;
+      default:
+      days = 31;
+  }
+  return days;
+}
+
+//Task_91 (3rd version)
+
+let howManydays = m => {
+  var days;
+  switch (m) {
+    case 4: case 6: case 9: case 11:
+      days = 30; break;
+    case 2:
+      days = 28; break;
+    default:
+      days = 31;
+  }
+  return days;
+}
+
+//Task_92
+
+//Coding in function grabDoll. function accept 1 parameter:dolls. it's a string array, a list of some dolls.
+//You need traverse dolls by using for loop. If element is "Hello Kitty" or "Barbie doll", you should push it to a bag(bag is an array, I've defined in the function); 
+//if it's other strings, we should use continue skip it.
+//When the bag has three element, bag is full. You should use break jump out the loop; If bag is not full, you should traverse dolls until the last element.
+//Return the bag after for loop finished.
+//You should use for, break and continue in your code. otherwise, your solution may not pass this kata.
+
+function grabDoll(dolls){
+  var bag=[];
+  for (let i = 0; i < dolls.length; i++) {
+    if (dolls[i] != "Hello Kitty" && dolls[i] != "Barbie doll") continue;
+      bag.push(dolls[i]);
+    if (bag.length == 3) break;
+  }
+  return bag;
+}
+
