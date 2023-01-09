@@ -1163,3 +1163,31 @@ function popShift(arr) {
 }
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
+
+// Task_5 ==> Remove Items Using splice()
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// Only change code below this line
+arr.splice(4,4);
+arr.splice(0,1);
+// Only change code above this line
+console.log(arr);
+
+// Task_6 ==> Add Items Using splice()
+
+function htmlColorNames(arr) {
+  // Only change code below this line
+arr.splice(0,2,'DarkSalmon', 'BlanchedAlmond');
+  // Only change code above this line
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+
+// Task_7 ==> 
+
+
+// Task_8 ==> 
+
+
+// Task_9 ==> 

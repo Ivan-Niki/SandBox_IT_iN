@@ -1446,3 +1446,35 @@ function whatNumberIsIt(n){
     return `Input number is ${n}`;
   }
 }
+
+//Task_94
+//Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+//Example:
+//["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+//None of the arrays will be empty, so you don't have to worry about that!
+
+function removeEveryOther(arr){
+  let newArr = arr.filter((item, index) => !(index % 2));
+  return newArr;
+}
+
+//Task_94 (2nd version)
+
+function removeEveryOther(arr){
+  return arr.filter(function(elem, index) {
+    return index % 2 === 0;
+  });
+}
+
+//Task_94 (3rd version)
+
+function removeEveryOther(arr){
+  var newArr=[];
+for (var i = 0; i < arr.length; i+=2){
+  newArr.push(arr[i]);
+  }
+return newArr;
+}
+
+
+
