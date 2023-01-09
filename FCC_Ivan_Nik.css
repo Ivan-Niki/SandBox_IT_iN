@@ -676,6 +676,122 @@ h4 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-/* Task_12 ==>  */
+/* Task_12 ==> Decrease the Opacity of an Element */
+.links {
+  text-align: left;
+  color: black;
+  opacity: 0.7;
+}
 
-/* Task_13 ==>  */
+/* Task_13 ==> Use the text-transform Property to Make Text Uppercase */
+h4 {
+  text-align: center;
+  background-color: rgba(45, 45, 45, 0.1);
+  padding: 10px;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+/* Task_14 ==> Set the font-size for Multiple Heading Elements */
+<style>
+h1 {
+  font-size: 68px;
+}
+h2 {
+  font-size: 52px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 21px;
+}
+h6 {
+  font-size: 14px;
+}
+</style>
+
+/* Task_15 ==> Set the font-weight for Multiple Heading Elements */
+<style>
+  h1 {
+    font-size: 68px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 52px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 21px;
+    font-weight: 300;
+  }
+  h6 {
+    font-size: 14px;
+    font-weight: 200;
+  }
+</style>
+
+/* Task_16 ==> Set the font-size of Paragraph Text */
+<style>
+  p {
+    font-size: 16px;
+  }
+</style>
+
+
+/* Task_17 ==> Set the line-height of Paragraphs */
+<style>
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+</style>
+
+
+/* Task_18 ==> Adjust the Hover State of an Anchor Tag */
+<style>
+  a {
+    color: #000;
+  }
+
+a:hover {
+  color: blue;
+}
+</style>
+
+/* Task_19 ==>  */
+
+
+/* Task_20 ==>  */
+
+
+/* Task_21 ==>  */
+
+
+/* Task_22 ==>  */
+
+
+/* Task_23 ==>  */
+
+
+/* Task_24 ==>  */
+
+
+/* Task_25 ==>  */
+
+
+/* Task_26 ==>  */
+
+
+/* Task_27 ==>  */
