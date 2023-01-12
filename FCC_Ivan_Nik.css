@@ -795,8 +795,17 @@ a:hover {
 </style>
 </head>
 
-/* Task_21 ==>  */
-
+/* Task_21 ==> Lock an Element to its Parent with Absolute Positioning */
+<style>
+  #searchbar {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  section {
+    position: relative;
+  }
+</style>
 
 /* Task_22 ==>  */
 
@@ -814,3 +823,13 @@ a:hover {
 
 
 /* Task_27 ==>  */
+
+
+/* CSS FLEXBOX */
+/* Task_1 ==> Use display: flex to Position Two Boxes */
+<style>
+  #box-container {
+    height: 500px;
+    display: flex;
+  }
+</style>

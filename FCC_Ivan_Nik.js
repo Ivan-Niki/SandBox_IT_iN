@@ -1194,7 +1194,25 @@ arr = arr.slice(2, 4);
 // Only change code above this line
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
-// Task_8 ==> 
+// Task_8 ==> Copy an Array with the Spread Operator
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    // Only change code below this line
+newArr.push([...arr]);
+    // Only change code above this line
+    num--;
+  }
+  return newArr;
+}
 
+console.log(copyMachine([true, false, true], 2));
 
-// Task_9 ==> 
+// Task_9 ==> Combine Arrays with the Spread Operator
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; // Change this line
+  return sentence;
+}
+
+console.log(spreadOut());
