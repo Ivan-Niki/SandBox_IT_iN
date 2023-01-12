@@ -1498,3 +1498,39 @@ function giveMeFive(obj){
 }
 
 
+//Task_94 (2nd version)
+function giveMeFive(obj){
+  var five=[];
+  for (var key in obj) {
+    if (key.length==5) five.push(key);
+    if (obj[key].length==5) five.push(obj[key]);
+  }
+  return five;
+}
+
+//Task_94 (3rd version)
+function giveMeFive(obj) {
+  const fives = [];
+  for (const k in obj) {
+    const v = obj[k];
+    if (k.length == 5) fives.push(k);
+    if (v.length == 5) fives.push(v);
+  }
+  return fives;
+}
+
+//Task_95
+//I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
+//P.S. Each array includes only integer numbers. Output is a number too.
+
+function arrayPlusArray(arr1, arr2) {
+  let sum1 = 0; let sum2 = 0;
+  for (let i = 0; i < arr1.length; i++) {
+    sum1 = sum1 + arr1[i];
+  }
+  for (let j = 0; j < arr2.length; j++) {
+    sum2 = sum2 + arr2[j];
+  }
+  return sum1 + sum2;
+}
+
