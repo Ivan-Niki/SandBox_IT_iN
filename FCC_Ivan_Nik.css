@@ -825,11 +825,28 @@ a:hover {
 /* Task_27 ==>  */
 
 
-/* CSS FLEXBOX */
+
+
+
+                    /* CSS FLEXBOX */
+
 /* Task_1 ==> Use display: flex to Position Two Boxes */
+
 <style>
   #box-container {
     height: 500px;
     display: flex;
   }
 </style>
+
+
+/* Task_2 ==> Add Flex Superpowers to the Tweet Embed */
+header .profile-name {
+  display: flex;
+  margin-left: 10px;
+}
+header .follow-btn {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+

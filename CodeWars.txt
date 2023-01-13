@@ -1534,3 +1534,129 @@ function arrayPlusArray(arr1, arr2) {
   return sum1 + sum2;
 }
 
+//Task_95 (2nd version)
+function arrayPlusArray(arr1, arr2) {
+  let arr = [...arr1, ...arr2];
+  return arr.reduce((a, b) => a + b);
+}
+
+//Task_96
+//The code provided is supposed replace all the dots . in the specified String str with dashes -
+//But it's not working properly.
+//Fix the bug so we can all go home early.
+//Notes: String str will never be null.
+
+(initial version):
+var replaceDots = function(str) {
+  return str.replace(/./, '-');
+}
+
+(correct version): 
+//"." - это спецсимвол, его нужно экранировать; 
+//g - флаг глобального поиска (поиск идёт по всей строке (все вхождения), а не до первого вхождения).
+
+var replaceDots = function(str) {
+  return str.replace(/\./g, '-');   
+}
+
+
+//Task_97
+//Some new animals have arrived at the zoo. The zoo keeper is concerned that perhaps the animals do not have the right tails. 
+//To help her, you must correct the broken function to make sure that the second argument (tail), is the same as the last letter of the first argument (body) - 
+//otherwise the tail wouldn't fit!
+//If the tail is right return true, else return false.
+//The arguments will always be non empty strings, and normal letters.
+
+	/////// (initial version):
+
+function correctTail(bod, tail ;
+
+  sub = body.substr(bodylength-(tail.length)
+  
+  if sub = tail) ;
+    return true
+  }
+  else 
+    return false
+	
+
+	/////// (correct version):
+
+function correctTail(body, tail) {
+  sub = body.substr(-1);
+  if (sub == tail) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+//Task_97 (2nd version)
+function correctTail(bod, tail) {
+  return bod[bod.length-1] === tail
+}
+
+//Task_97 (3rd version)
+const correctTail = (x,y)=>x.endsWith(y)
+
+//Task_97 (3rd version)(2)
+const correctTail = (body, tail) => body.endsWith(tail)
+
+
+//Task_97 (4th version)
+function correctTail(body, tail){
+  return (tail == body.charAt(body.length-1))? true:false;
+}
+
+//Task_98
+Debug celsius converter
+Your friend is traveling abroad to the United States so he wrote a program to convert fahrenheit to celsius. Unfortunately his code has some bugs.
+Find the errors in the code to get the celsius converter working properly.
+To convert fahrenheit to celsius: celsius = (fahrenheit - 32) * (5/9).
+Remember that typically temperatures in the current weather conditions are given in whole numbers. 
+It is possible for temperature sensors to report temperatures with a higher accuracy such as to the nearest tenth. 
+Instrument error though makes this sort of accuracy unreliable for many types of temperature measuring sensors.
+
+         /////// (initial version):
+	 
+function weatherInfo (temp) {
+  var c : convert(temp)
+  if (c > 0)
+    return (c + " is freezing temperature")
+  else
+    return (c + " is above freezing temperature")
+}
+
+function convertToCelsius (temperature) {
+  var celsius = (temperatur) - 32 + (5/9)
+  return temperature
+}
+
+         /////// (correct version):
+		 
+function weatherInfo (temp) {
+  var c = (temp - 32) * (5/9);
+  if (c < 0) {
+    return (c + " is freezing temperature")
+    }
+  else {
+    return (c + " is above freezing temperature")
+  }
+}
+
+
+//Task_99
+//Your friend has been out shopping for puppies (what a time to be alive!)... He arrives back with multiple dogs, and you simply do not know how to respond!
+//By repairing the function provided, you will find out exactly how you should respond, depending on the number of dogs he has.
+//The number of dogs will always be a number and there will always be at least 1 dog.
+
+function howManyDalmatians(number) {
+  let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+  let respond = (number <= 10) ? dogs[0] : 
+  (number <= 50) ? dogs[1] : 
+  (number === 101) ? dogs[3] : 
+  dogs[2];
+return (respond);
+}
+
