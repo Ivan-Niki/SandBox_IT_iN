@@ -850,3 +850,27 @@ header .follow-btn {
   margin: 0 0 0 auto;
 }
 
+/* Task_3 ==> Use the flex-direction Property to Make a Row */
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: row-reverse;
+  }
+</style>
+
+/* Task_4 ==>  */
+
+
+/* Task_5 ==>  */
+
+
+/* Task_6 ==>  */
+
+
+/* Task_7 ==>  */
+
+
+/* Task_8 ==>  */
+
+
