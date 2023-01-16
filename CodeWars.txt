@@ -1682,3 +1682,73 @@ function multiply(number) {
   return number * Math.pow(5, Math.abs(number).toString().length);
 }
 
+//Task_101
+//Return the number (count) of vowels in the given string.
+//We will consider a, e, i, o, u as vowels for this Kata (but not y).
+//The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') {
+      sum += 1;
+    }
+  }
+  return sum;
+}
+
+
+//Task_102
+//Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+//For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+//Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-35)
+//Note: The function accepts an integer and returns an integer.
+
+function squareDigits(num){
+  let numStr = String(num);
+  let arr = [];
+  for (let i = 0; i < numStr.length; i++) {
+    arr.push(Math.pow(Number(numStr[i]), 2));
+  }
+  return Number(arr.join(''));
+}
+
+//Task_102 (2nd version)
+function squareDigits(num){
+    var string = num.toString();
+    var results = [];
+    for (var i = 0; i < string.length; i++){
+        results[i] = string[i] * string[i];
+    }
+    return Number(results.join(''));
+};
+
+//Task_103
+//Implement a function that accepts 3 integer values a, b, c. 
+//The function should return true if a triangle can be built with the sides of given length and false in any other case.
+//(In this case, all triangles must have surface greater than 0 to be accepted).
+
+function isTriangle(a,b,c)
+{
+  if (a == 0 || b == 0 || c == 0) {
+     return false;
+  }
+  else if ((a + b) <= c) {
+    return false;
+  } else if ((a + c) <= b) {
+   return false;
+  } 
+  else if ((b + c) <= a) {
+   return false;
+  }
+  else {
+    return true;
+  }
+}
+
+//Task_103 (2nd version)
+function isTriangle(a,b,c)
+{
+   return a + b > c && a + c > b && c + b > a;
+}
+

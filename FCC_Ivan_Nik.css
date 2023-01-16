@@ -807,11 +807,30 @@ a:hover {
   }
 </style>
 
-/* Task_22 ==>  */
+/* Task_22 ==> Lock an Element to the Browser Window with Fixed Positioning */
+#navbar {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+background-color: #767676;
+}
 
-
-/* Task_23 ==>  */
-
+/* Task_23 ==> Push Elements Left or Right with the float Property */
+<style>
+    #left {
+      float: left;
+      width: 50%;
+    }
+    #right {
+      float: right;
+      width: 40%;
+    }
+    aside, section {
+      padding: 2px;
+      background-color: #ccc;
+    }
+  </style>
 
 /* Task_24 ==>  */
 
@@ -859,11 +878,36 @@ header .follow-btn {
   }
 </style>
 
-/* Task_4 ==>  */
+/* Task_4 ==> Apply the flex-direction Property to Create Rows in the Tweet Embed */
+header {
+  display: flex;
+  flex-direction: row;
+}
 
+/* Task_5 ==> Use the flex-direction Property to Make a Column */
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
 
-/* Task_5 ==>  */
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
 
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
 
 /* Task_6 ==>  */
 

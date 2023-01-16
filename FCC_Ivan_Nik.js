@@ -1250,3 +1250,63 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+// Task_11 ==> Create complex multi-dimensional arrays
+let myNestedArray = [
+  // Only change code below this line
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  [
+    ['loop', 'shift', 6, 7, 1000, 'method', 'deep']
+  ],
+  [
+    [
+      ['concat', false, true, 'spread', 'array', 'deeper'] 
+    ],
+    [
+      [
+        ['mutate', 1327.98, 'splice', 'slice', 'push', 'deepest']
+      ],
+    ]
+  ] 
+  // Only change code above this line
+];
+
+
+// Task_12 ==> Add Key-Value Pairs to JavaScript Objects
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+// Only change code below this line
+foods.bananas = 13;
+foods['grapes'] = 35;
+const berries = 'strawberries';
+foods[berries] = 27;
+// Only change code above this line
+
+console.log(foods);
+
+// Task_13 ==> Modify an Object Nested Within an Object
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+// Only change code below this line
+userActivity.data.online = 45;
+// Only change code above this line
+
+console.log(userActivity);
+
+// Task_14 ==> 
+
+
+// Task_15 ==> 
+
+
+// Task_16 ==> 
