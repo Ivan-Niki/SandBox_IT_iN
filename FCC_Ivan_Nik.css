@@ -832,11 +832,19 @@ background-color: #767676;
     }
   </style>
 
-/* Task_24 ==>  */
+/* Task_24 ==> Change the Position of Overlapping Elements with the z-index Property */
+.first {
+  background-color: red;
+  position: absolute;
+  z-index: 2;
 
-
-/* Task_25 ==>  */
-
+/* Task_25 ==> Center an Element Horizontally Using the margin Property */
+div {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
 
 /* Task_26 ==>  */
 

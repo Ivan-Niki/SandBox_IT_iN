@@ -1303,10 +1303,25 @@ userActivity.data.online = 45;
 
 console.log(userActivity);
 
-// Task_14 ==> 
+// Task_14 ==> Access Property Names with Bracket Notation
+
 
 
 // Task_15 ==> 
 
 
 // Task_16 ==> 
+
+
+
+        DEBUGGING
+// Task_1 ==> Use the JavaScript Console to Check the Value of a Variable
+let a = 5;
+let b = 1;
+a++;
+// Only change code below this line
+console.log(a);
+
+let sumAB = a + b;
+console.log(sumAB);
+
