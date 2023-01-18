@@ -846,8 +846,13 @@ div {
   margin: auto;
 }
 
-/* Task_26 ==>  */
-
+/* Task_26 ==> Learn about Complementary Colors */
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
 
 /* Task_27 ==>  */
 

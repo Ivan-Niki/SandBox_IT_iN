@@ -1777,3 +1777,59 @@ function enough(cap, on, wait) {
   }
 }
 
+//Task_105
+//Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+//In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". 
+//Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. 
+//DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+//More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
+//Example: (input --> output)
+//"ATTGC" --> "TAACG"
+//"GTAT" --> "CATA"
+
+function DNAStrand(dna){
+  let arr = dna.split('');
+  let arr2 = arr.map(function(item){
+    if (item == "A") {
+      return "T";
+    }
+    if (item == "T") {
+      return "A";
+    }
+    if (item == "G") {
+      return "C";
+    }
+    if (item == "C") {
+      return "G";
+    }
+  })
+  return arr2.join('');
+}
+
+
+//Task_105 (2nd version)
+
+function DNAStrand(dna){
+	var complements = {
+  	A: 'T',
+    T: 'A',
+    C: 'G',
+    G: 'C'
+  };
+	return dna.split('').map(function(char) {
+		return complements[char];
+  }).join('');
+}
+
+//Task_106
+//Trolls are attacking your comment section!
+//A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+//Your task is to write a function that takes a string and return a new string with all vowels removed.
+//For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+//Note: for this kata y isn't considered a vowel.
+
+function disemvowel(str) {
+  let newStr = str.replace(/[aouei]/gi, '');
+  return newStr;
+}
+
