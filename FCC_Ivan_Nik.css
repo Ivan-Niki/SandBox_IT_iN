@@ -867,7 +867,24 @@ div {
   background-color: #FF007F;
 }
 
-/* Task_28 ==>  */
+/* Task_28 ==> Adjust the Color of Various Elements to Complementary Colors */
+
+header {
+  background-color: teal;
+  color: white;
+  padding: 0.25em;
+}
+h2 {
+  color: teal;
+}
+button {
+  background-color: orange;
+}
+footer {
+  background-color: teal;
+  color: white;
+  padding: 0.5em;
+}
 
 /* Task_29 ==>  */
 
