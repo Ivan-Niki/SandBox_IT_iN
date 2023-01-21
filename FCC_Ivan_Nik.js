@@ -1411,11 +1411,15 @@ countToFive();
 
 
 
-               // Object Oriented Programming
+          ///////////////// Object Oriented Programming ////////////////
 
+// Task_1 ==> Create a Basic JavaScript Object
+let dog = {
+  name: "Jack",
+  numLegs: 4
+};
 
 // Task_2 ==> Use Dot Notation to Access the Properties of an Object
-
 let dog = {
   name: "Spot",
   numLegs: 4
@@ -1423,3 +1427,47 @@ let dog = {
 // Only change code below this line
 console.log(dog.name);
 console.log(dog.numLegs);
+
+// Task_3 ==> Create a Method on an Object
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + dog.numLegs + " legs.";}
+};
+
+dog.sayLegs();
+
+// Task_4 ==> Make Code More Reusable with the this Keyword
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+dog.sayLegs();
+
+
+// Task_5 ==> Define a Constructor Function
+function Dog() {
+  this.name = "Spot";
+  this.color = "gray";
+  this.numLegs = 4;
+}
+
+// Task_6 ==> 
+
+
+// Task_7 ==> 
+
+
+// Task_8 ==> 
+
+
+// Task_9 ==> 
+
+
+
+
+
+
+

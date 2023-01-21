@@ -956,8 +956,12 @@ header {
   <div id="box-2"></div>
 </div>
 
-/* Task_6 ==>  */
-
+/* Task_6 ==> Apply the flex-direction Property to Create a Column in the Tweet Embed */
+header .profile-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
 
 /* Task_7 ==>  */
 
