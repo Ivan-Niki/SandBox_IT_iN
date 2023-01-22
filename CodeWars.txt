@@ -2014,3 +2014,10 @@ var isSquare = function(n){
   return Number.isInteger(Math.sqrt(n));
 }
 
+
+//Task_111
+//Return the type of the sum of the two arguments
+
+function typeOfSum(a, b) {
+  return typeof(a + b);
+}
