@@ -966,6 +966,11 @@ header .profile-name {
 /* Task_7 ==>  */
 
 
-/* Task_8 ==>  */
-
+/* Task_8 ==> Use the justify-content Property in the Tweet Embed */
+header .profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
 
