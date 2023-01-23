@@ -1326,11 +1326,30 @@ delete foods.strawberries;
 console.log(foods);
 
 
-// Task_16 ==> 
+// Task_16 ==> Check if an Object has a Property
+function isEveryoneHere(userObj) {
+  // Only change code below this line
+  if (
+  userObj.hasOwnProperty('Alan') &&
+  userObj.hasOwnProperty('Jeff') &&
+  userObj.hasOwnProperty('Sarah') &&
+  userObj.hasOwnProperty('Ryan')
+  ) {
+    return true;
+  }
+  return false;
+  // Only change code above this line
+}
+
+console.log(isEveryoneHere(users));
 
 
 
-        DEBUGGING
+
+
+
+                    ////////// D_E_B_U_G_G_I_N_G //////////////
+                    
 // Task_1 ==> Use the JavaScript Console to Check the Value of a Variable
 let a = 5;
 let b = 1;
