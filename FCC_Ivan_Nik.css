@@ -887,7 +887,19 @@ header {
     padding: 0.5em;
   }
 
-/* Task_29 ==>  */
+/* Task_29 ==> Adjust the Hue of a Color */
+.green {
+  background-color: hsl(120, 100%, 50%);
+}
+
+.cyan {
+  background-color: hsl(180, 100%, 50%);
+}
+
+.blue {
+  background-color: hsl(240, 100%, 50%);
+}
+
 
 /* Task_30 ==>  */
 
